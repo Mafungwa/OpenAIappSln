@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OpenAIapp.Views.DisplayView"
+             Title="DisplayView"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout>
+        <Label 
+            Text="WELCOME TO YODA FUN ENJOY!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Frame CornerRadius="20" Margin="50" Padding="-60">
+        <Image Source="starwars.jpg"
+               HeightRequest="300"
+               WidthRequest="300"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+        </Frame>
+        <Label Text="Yoda Fun Fact"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+        <Button Text="Click For Fun"
+                Clicked="Button_Clicked"
+                HeightRequest="300"
+                WidthRequest="300"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
